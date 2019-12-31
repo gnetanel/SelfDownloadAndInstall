@@ -15,10 +15,8 @@ Key point to notice (see in project code for details)
 </provider>
 
 2) Add the xml file reference from the provider above (@xml/file_provider_paths)
-<?xml version="1.0" encoding="utf-8"?>
-<paths>
-    <files-path  name="files" path="/" /> (this refer to internal directory that file is located on)
-</paths>
+In my example <files-path  name="files" path="/" /> this refer to internal directory that file is located on)
+
 
 3) Set the intent correctly (see below)
 
@@ -29,5 +27,5 @@ Key point to notice (see in project code for details)
             installIntent.setDataAndType(uri, "application/vnd.android.package-archive");
             context.startActivity(installIntent);
 
-
+4) update in MainActivity, appUrl to refer to URL you apk is located on 
 
